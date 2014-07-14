@@ -1,0 +1,17 @@
+; things make file for local development
+core = "7.x"
+api = "2"
+
+projects[drupal][version] = "7.x"
+; include the d.o. profile base
+includes[] = "drupal-org.make"
+
+; +++++ Libraries +++++
+
+; things
+libraries[things][directory_name] = "things"
+libraries[things][type] = "profile"
+libraries[things][destination] = "../../profiles"
+libraries[things][download][type] = "get"
+libraries[things][download][url] = "http://ftp.drupal.org/files/projects/things-7.x-1.x-dev.tar.gz"
+
